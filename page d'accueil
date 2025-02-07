@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vente d'E-books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: left;
+            border-bottom: 2px solid #eee;
+        }
+
+        header .logo {
+            display: inline-block;
+        }
+
+        header .logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .book {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .book h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .book p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .buy-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .buy-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo de la boutique d'e-books">
+    </div>
+</header>
+
+<div class="main-content">
+    <!-- Livre 1 -->
+    <div class="book">
+        <img src="ebook1.jpg" alt="E-book 1">
+        <h2>E-book Titre 1</h2>
+        <p>Un e-book captivant sur le développement personnel.</p>
+        <button class="buy-btn" onclick="window.location.href='lien-de-commande-ebook1'">Acheter</button>
+    </div>
+
+    <!-- Livre 2 -->
+    <div class="book">
+        <img src="ebook2.jpg" alt="E-book 2">
+        <h2>E-book Titre 2</h2>
+        <p>Un guide complet sur la gestion du temps.</p>
+        <button class="buy-btn" onclick="window.location.href='lien-de-commande-ebook2'">Acheter</button>
+    </div>
+
+    <!-- Livre 3 -->
+    <div class="book">
+        <img src="ebook3.jpg" alt="E-book 3">
+        <h2>E-book Titre 3</h2>
+        <p>Les meilleures pratiques pour améliorer votre productivité.</p>
+        <button class="buy-btn" onclick="window.location.href='lien-de-commande-ebook3'">Acheter</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Vente d'E-books | Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
